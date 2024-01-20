@@ -33,3 +33,9 @@ start transaction;
     set account_balance = account_balance + 100
     where account_id = 4;
 rollback transaction;
+
+-- This transfer will try to delete the account with 500 balance but will rollback
+start transaction;
+    delete from bank_account
+    where account_balance = 500;
+rollback;
