@@ -19,9 +19,4 @@ FROM
 
 
 
-SELECT
-  NULLIF(hireDate, dateOfBirth) as hireDate
-FROM
-  Employees;
-
   
