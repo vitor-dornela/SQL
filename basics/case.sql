@@ -39,3 +39,31 @@ SELECT
     END AS country 
 FROM
     clients;
+
+
+-- if TRUE return 'False', if FALSE return 'True'
+SELECT CASE 
+    WHEN FALSE THEN 'True'
+    WHEN TRUE THEN 'False'
+END AS result; 
+
+
+CREATE TABLE products (
+    product VARCHAR2(50),
+    price NUMBER
+);
+
+INSERT INTO product_price (product, price) VALUES ('Milk', 5);
+INSERT INTO product_price (product, price) VALUES ('Meat', 11);
+INSERT INTO product_price (product, price) VALUES ('Tomato', 10);
+INSERT INTO product_price (product, price) VALUES ('Candy', 3);
+INSERT INTO product_price (product, price) VALUES ('Onion', 1);
+
+SELECT
+  product,
+  CASE
+    WHEN price > 10 THEN 'expensive'
+    WHEN price < 3 THEN 'cheap'
+    ELSE 'average'
+  END AS product_category
+FROM products;
