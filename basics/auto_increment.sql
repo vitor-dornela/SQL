@@ -1,3 +1,8 @@
+/* 
+Multi-line comment
+*/
+-- one line comment
+
 CREATE TABLE employees(
   employee_id INT NOT NULL AUTO_INCREMENT,
   first_name VARCHAR(30),
