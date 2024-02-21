@@ -38,7 +38,7 @@ SELECT
         -- NO ELSE, SO EVERYTHING ELSE WILL BE NULLx
     END AS country 
 FROM
-    clients;
+    Clients;
 
 
 -- if TRUE return 'False', if FALSE return 'True'
