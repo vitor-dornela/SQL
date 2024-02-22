@@ -29,3 +29,21 @@ CREATE PROCEDURE third_procedure()
         INSERT INTO event_list (action) VALUES ('buy ice cream');
     END IF;
 
+    DROP PROCEDURE IF EXISTS third_procedure;
+
+CREATE PROCEDURE third_procedure()
+BEGIN
+    IF (false AND true) AND (true OR false) THEN
+        INSERT INTO event_list (action) VALUES ('put on sweater');
+    END IF;
+    IF true AND true THEN
+        INSERT INTO event_list (action) VALUES ('take red hat');
+    END IF;
+    IF true OR false THEN
+        INSERT INTO event_list (action) VALUES ('take book');
+    ELSE
+        INSERT INTO event_list (action) VALUES ('buy ice cream');
+    END IF;
+END;
+
+CALL third_procedure();

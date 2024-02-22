@@ -1,3 +1,4 @@
+DROP TABLE event_list;
 -- Create table
 CREATE TABLE event_list (
     action VARCHAR2(100)
@@ -38,3 +39,12 @@ BEGIN
     END IF;
 END third_procedure;
 /
+
+BEGIN
+    first_procedure;
+    second_procedure;
+    third_procedure;
+END;
+/
+
+SELECT action FROM event_list;
