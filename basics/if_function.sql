@@ -17,6 +17,7 @@ CALL shopping('pants', 'red');
 CALL shopping('shoes', 'green');
 CALL shopping('umbrella', 'yellow');
 
+
 SELECT * FROM red_basket;
 SELECT * FROM green_basket;
 SELECT * FROM other_basket;
