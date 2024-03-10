@@ -1,0 +1,9 @@
+CREATE PROCEDURE GetUserByID (
+  IN InputID INT
+)
+
+BEGIN
+  SELECT *
+  FROM users
+  WHERE id = InputID;
+END;
