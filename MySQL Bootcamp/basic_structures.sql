@@ -94,3 +94,10 @@ VALUES ('Ringo', 'Tabby', 4),
        
        
 
+CREATE TABLE Impression (
+    banner_id INT,
+    background_color VARCHAR(6),
+    banner_width REAL,
+    cost_per_click DECIMAL(6, 2),
+    is_click BOOLEAN
+);
